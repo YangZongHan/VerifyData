@@ -1,0 +1,118 @@
+<!DOCTYPE>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi"
+        crossorigin="anonymous">
+    <script src="./verifyData.js"></script>
+    <script src="./test.js"></script>
+    <style>
+        .center {
+            margin: 50px 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="center">
+            <h1>Verify Data Framework</h1>
+            <form class="" action="">
+                <div class="form-group row">
+                    <label class="col-form-label col-xs-2">空白</label>
+                    <div class="col-xs-6">
+                        <input class="form-control" id="isEmpty" type="text" placeholder="i am empty" />
+                    </div>
+                    <label class="col-form-label col-xs-2" id="emptyMessage"></label>
+                </div>
+                <div class="form-group row">
+                    <label class="col-form-label col-xs-2">數字</label>
+                    <div class="col-xs-6">
+                        <input class="form-control" id="isNumber" type="text" />
+                    </div>
+                    <label class="col-form-label col-xs-2" id="numberMessage"></label>
+                </div>
+                <div class="form-group row">
+                    <label class="col-form-label col-xs-2">日期</label>
+                    <div class="col-xs-6">
+                        <input class="form-control" id="isDate" type="text" />
+                    </div>
+                    <label class="col-form-label col-xs-2" id="dateMessage"></label>
+                </div>
+                <div class="form-group row">
+                    <label class="col-form-label col-xs-2">正數</label>
+                    <div class="col-xs-6">
+                        <input class="form-control" id="isPostive" type="text" />
+                    </div>
+                    <label class="col-form-label col-xs-2" id="postiveMessage"></label>
+                </div>
+                <div class="form-group row">
+                    <label class="col-form-label col-xs-2">信箱</label>
+                    <div class="col-xs-6">
+                        <input class="form-control" id="isEmail" type="text" />
+                    </div>
+                    <label class="col-form-label col-xs-2" id="emailMessage"></label>
+                </div>
+                <div class="form-group row">
+                    <label class="col-form-label col-xs-2">身分證</label>
+                    <div class="col-xs-6">
+                        <input class="form-control" id="isSocialID" type="text" />
+                    </div>
+                    <label class="col-form-label col-xs-2" id="socialIDMessage"></label>
+                </div>
+                <div class="form-group row">
+                    <label class="col-form-label col-xs-2">手機</label>
+                    <div class="col-xs-6">
+                        <input class="form-control" id="isCellphone" type="text" />
+                    </div>
+                    <label class="col-form-label col-xs-2" id="cellphoneMessage"></label>
+                </div>
+                <div class="form-group row">
+                    <label class="col-form-label col-xs-2">一般電話或傳真</label>
+                    <div class="col-xs-6">
+                        <input class="form-control" id="isTelphone" type="text" />
+                    </div>
+                    <label class="col-form-label col-xs-2" id="telphoneMessage"></label>
+                </div>
+                <div class="form-group row">
+                    <label class="col-form-label col-xs-2">車牌</label>
+                    <div class="col-xs-6">
+                        <input class="form-control" id="isPlate" type="text" />
+                    </div>
+                    <label class="col-form-label col-xs-2" id="plateMessage"></label>
+                </div>
+                <div class="form-group row">
+                    <label class="col-form-label col-xs-2">比較</label>
+                    <div class="col-xs-6">
+                        <input class="form-control" id="isCompare" type="text" />
+                    </div>
+                    <label class="col-form-label col-xs-2" id="compareMessage"></label>
+                </div>
+                <div class="form-group row">
+                    <label class="col-form-label col-xs-2">範圍</label>
+                    <div class="col-xs-6">
+                        <input class="form-control" id="isRange" type="text" />
+                    </div>
+                    <label class="col-form-label col-xs-2" id="rangeMessage"></label>
+                </div>
+                <div class="form-group row">
+                    <label class="col-form-label col-xs-2">自訂驗證</label>
+                    <div class="col-xs-6">
+                        <input class="form-control" id="isCustom" type="text" />
+                    </div>
+                    <label class="col-form-label col-xs-2" id="CustomMessage"></label>
+                </div>
+                <div class="form-group row">
+                    <div class="offset-xs-6 col-xs-1">
+                        <input class="btn btn-danger" id="clearInput" type="button" value="清除">
+                    </div>
+                    <div class="col-xs-1">
+                        <input class="btn btn-primary" id="submit" type="submit" value="提交">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
